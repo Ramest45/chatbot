@@ -1,0 +1,491 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?",
+        "What second-hand products do you have?"
+      ],
+      "responses": [
+        "We sell a variety of second-hand products including textbooks, electronics, furniture, and clothing.",
+        "We have textbooks, electronics, furniture, clothing, and more."
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?",
+        "What payment methods are available?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard, PayPal, and cash on delivery.",
+        "We accept most major credit cards, and PayPal.",
+        "You can pay using VISA, Mastercard, PayPal, or cash on delivery."
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?",
+        "What is the delivery time for orders?"
+      ],
+      "responses": [
+        "Delivery will be based on the negotiation between buyer and seller."
+      ]
+    },
+    {
+      "tag": "return_policy",
+      "patterns": [
+        "What is the return policy?",
+        "Can I return a product?",
+        "How do returns work?",
+        "What if I am not satisfied with my purchase?"
+      ],
+      "responses": [
+        "There is no return policy for now in the future we will seeking to adopt return policy."
+      ]
+    },
+    {
+      "tag": "seller_info",
+      "patterns": [
+        "How can I sell my items?",
+        "What is the process to sell something?",
+        "How do I list a product for sale?",
+        "I want to sell my stuff, how do I do that?"
+      ],
+      "responses": [
+        "To sell an item, click on 'Sell' in the top menu, fill out the product details, and submit.",
+        "You can list your product by clicking 'Sell' and providing the necessary information about your item."
+      ]
+    },
+    {
+      "tag": "buyer_protection",
+      "patterns": [
+        "What protection do I have as a buyer?",
+        "Is there buyer protection?",
+        "How am I protected when buying?",
+        "What if I receive a faulty product?"
+      ],
+      "responses": [
+        "We offer a buyer protection policy that ensures you get a refund if the product is faulty or not as described.",
+        "As a buyer, you're protected with our refund policy in case the product does not meet your expectations."
+      ]
+    },
+    {
+      "tag": "contact_support",
+      "patterns": [
+        "How can I contact support?",
+        "I need help, how can I reach you?",
+        "Is there customer support?",
+        "How do I get in touch with customer service?"
+      ],
+      "responses": [
+        "You can contact our support team via email at ramestgupta1234@gmail.com or call us at 6388099423.",
+        "For any assistance, please reach out to our customer support at ramestgupta1234@gmail.com or 6388099423."
+      ]
+    },
+    {
+      "tag": "product_condition",
+      "patterns": [
+        "What is the condition of the items?",
+        "Are the products new or used?",
+        "Can you tell me about the product condition?",
+        "How do I know the condition of the product?"
+      ],
+      "responses": [
+        "All products are second-hand but are in good condition. Each listing includes a detailed description of the item's condition.",
+        "Our products are pre-owned. Sellers provide detailed descriptions and images to show the condition of each item."
+      ]
+    },
+    {
+      "tag": "shipping_cost",
+      "patterns": [
+        "What is the shipping cost?",
+        "How much does delivery cost?",
+        "Is there a shipping fee?",
+        "Do I have to pay for delivery?"
+      ],
+      "responses": [
+        "Shipping is free for all orders over $50. For orders under $50, a small shipping fee applies.",
+        "Delivery costs vary based on the item and location. Please check the shipping cost at checkout."
+      ]
+    },
+    {
+      "tag": "order_tracking",
+      "patterns": [
+        "How do I track my order?",
+        "Can I track my delivery?",
+        "Where is my order?",
+        "Track my shipment"
+      ],
+      "responses": [
+        "You can track your order by logging into your account and visiting the 'My Orders' section.",
+        "Once your order is shipped, you will receive a tracking number via email."
+      ]
+    },
+    {
+      "tag": "login",
+      "patterns": [
+        "I am trying to log in as an admin",
+        "How do I log in as a buyer?",
+        "I need help with admin login",
+        "Can you assist me with buyer login?",
+        "How can I access the admin panel?",
+        "How do I log into my buyer account?"
+      ],
+      "responses": [
+        "For admin login, please enter your admin credentials on the login page. If you need help, contact support.",
+        "To log in as a buyer, please enter your email and password on the buyer login page. Need assistance? I'm here to help.",
+        "Having trouble logging in as an admin? Make sure your credentials are correct, or reset your password if needed.",
+        "If you're trying to log in as a buyer, ensure your email and password are correct. You can reset your password if you've forgotten it.",
+        "Accessing the admin panel requires admin credentials. If you need help, contact support or reset your password.",
+        "To access your buyer account, use your registered email and password. Need help? I'm here to assist you."
+      ]
+    },
+    {
+      "tag": "account_creation",
+      "patterns": [
+        "How do I create an account?",
+        "Can I sign up as a new user?",
+        "How do I register?",
+        "I want to create a new account"
+      ],
+      "responses": [
+        "To create an account, click on the 'Sign Up' button at the top right corner and fill in your details.",
+        "You can register as a new user by clicking on 'Sign Up' and providing the necessary information."
+      ]
+    },
+    {
+      "tag": "profile_update",
+      "patterns": [
+        "How can I update my profile?",
+        "I want to change my profile details",
+        "How do I edit my account information?",
+        "Can I update my contact information?"
+      ],
+      "responses": [
+        "To update your profile, log in to your account, go to 'My Profile', and make the necessary changes.",
+        "You can edit your account information by visiting the 'My Profile' section after logging in."
+      ]
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "How can I give feedback?",
+        "I want to provide feedback",
+        "Where can I leave a review?",
+        "How do I share my experience?"
+      ],
+      "responses": [
+        "We'd love to hear your feedback! You can leave a review or share your experience in the 'Feedback' section.",
+        "To provide feedback, please visit the 'Feedback' section and fill out the form."
+      ]
+    },
+    {
+      "tag": "transaction_issues",
+      "patterns": [
+        "I have a problem with my transaction",
+        "What if there is an issue with my payment?",
+        "I need help with a payment issue",
+        "My payment didn't go through"
+      ],
+      "responses": [
+        "If you encounter any issues with your transaction, please contact our support team immediately.",
+        "For any payment-related issues, reach out to our customer support at ramestgupta1234@gmail.com or call 6388099423."
+      ]
+    },
+    {
+      "tag": "product_listing_issues",
+      "patterns": [
+        "I am having trouble listing my product",
+        "My product is not showing up",
+        "How can I fix issues with my listing?",
+        "My item isn't listed properly"
+      ],
+      "responses": [
+        "If you're having trouble listing your product, ensure all required fields are filled out correctly. Contact support if the issue persists.",
+        "Make sure your product details are complete and accurate. If your item isn't showing up, please contact our support team."
+      ]
+    },
+    {
+      "tag": "account_security",
+      "patterns": [
+        "How can I secure my account?",
+        "What should I do if my account is hacked?",
+        "How do I change my password?",
+        "How can I enable two-factor authentication?"
+      ],
+      "responses": [
+        "To secure your account, use a strong password and change it regularly. You can also enable two-factor authentication in your account settings.",
+        "If you suspect your account has been hacked, change your password immediately and contact support.",
+        "To change your password, go to 'Account Settings' and select 'Change Password'.",
+        "You can enable two-factor authentication by visiting 'Account Settings' and selecting 'Security'."
+      ]
+    },
+    {
+      "tag": "dispute_resolution",
+      "patterns": [
+        "How can I resolve a dispute with a seller?",
+        "What do I do if I have an issue with a buyer?",
+        "How are disputes handled?",
+        "I need help with a transaction dispute"
+      ],
+      "responses": [
+        "If you have a dispute, please contact our support team with the details. We will mediate to help resolve the issue.",
+        "For disputes with buyers or sellers, reach out to our support team. We aim to resolve disputes fairly and promptly."
+      ]
+    },
+    {
+      "tag": "campus_specific",
+      "patterns": [
+        "Is there a pickup point on campus?",
+        "How do I find sellers within my college?",
+        "Can I meet the seller on campus?",
+        "What are the on-campus delivery options?"
+      ],
+      "responses": [
+        "Yes, there is a designated pickup point on campus. Please check the 'Campus Pickup' section for details.",
+        "You can find sellers within your college by filtering search results to show on-campus listings only.",
+        "Meeting the seller on campus is an option. Coordinate the details through the messaging feature.",
+        "On-campus delivery options vary. Please check the 'Delivery Options' section for more information."
+      ]
+    },
+    {
+      "tag": "item_availability",
+      "patterns": [
+        "Is this item still available?",
+        "Can I check if an item is available?",
+        "How do I know if a product is in stock?",
+        "Is the product still in stock?"
+      ],
+      "responses": [
+        "You can check the availability of an item on the product listing page. If it's available, there will be an option to purchase.",
+        "To see if an item is available, visit the product listing page. It will indicate if the item is in stock."
+      ]
+    },
+    {
+      "tag": "price_negotiation",
+      "patterns": [
+        "Can I negotiate the price?",
+        "Is the price negotiable?",
+        "How do I bargain with the seller?",
+        "Can I offer a different price?"
+      ],
+      "responses": [
+        "Yes, you can negotiate the price with the seller using the messaging feature on the product listing page.",
+        "To negotiate the price, contact the seller directly through the messaging system and discuss your offer."
+      ]
+    },
+    {
+      "tag": "bulk_purchase",
+      "patterns": [
+        "Can I buy in bulk?",
+        "Do you offer discounts for bulk purchases?",
+        "How do I place a bulk order?",
+        "Is there a discount for buying multiple items?"
+      ],
+      "responses": [
+        "For bulk purchases, please contact the seller directly to discuss possible discounts and arrangements.",
+        "You can negotiate bulk purchase details with the seller through the messaging feature on the product listing page."
+      ]
+    },
+    {
+      "tag": "account_deletion",
+      "patterns": [
+        "How do I delete my account?",
+        "Can I remove my account?",
+        "I want to close my account",
+        "How can I deactivate my account?"
+      ],
+      "responses": [
+        "To delete your account, please go to 'Account Settings' and select 'Delete Account'. If you need assistance, contact support.",
+        "You can deactivate your account by visiting 'Account Settings' and choosing 'Delete Account'. For further help, reach out to our support team."
+      ]
+    },
+    {
+      "tag": "account_reactivation",
+      "patterns": [
+        "How can I reactivate my account?",
+        "I want to reopen my closed account",
+        "Can I get my account back?",
+        "How do I restore my account?"
+      ],
+      "responses": [
+        "To reactivate your account, please contact our support team with your account details.",
+        "You can restore your account by reaching out to our support team. Provide your account information for assistance."
+      ]
+    },
+    {
+      "tag": "wishlist",
+      "patterns": [
+        "How do I add items to my wishlist?",
+        "Can I save products for later?",
+        "How do I use the wishlist feature?",
+        "I want to save items to my wishlist"
+      ],
+      "responses": [
+        "To add items to your wishlist, click the 'Add to Wishlist' button on the product listing page.",
+        "You can save products for later by using the 'Add to Wishlist' feature found on each product's page."
+      ]
+    },
+    {
+      "tag": "report_issue",
+      "patterns": [
+        "How do I report an issue with a product?",
+        "Where can I report a seller?",
+        "How do I report a problem?",
+        "I need to report a faulty product"
+      ],
+      "responses": [
+        "To report an issue, go to the product listing page and click 'Report'. Provide details of the problem in the form.",
+        "If you need to report a seller or product, use the 'Report' button on the product page and fill out the necessary information."
+      ]
+    },
+    {
+      "tag": "campus_events",
+      "patterns": [
+        "Are there any upcoming campus events?",
+        "What events are happening on campus?",
+        "Is there a schedule for campus events?",
+        "How can I find out about campus activities?"
+      ],
+      "responses": [
+        "You can find information about upcoming campus events in the 'Events' section of our website.",
+        "Check out the 'Events' page on our site for details about upcoming campus activities and events."
+      ]
+    },
+    {
+      "tag": "promotions",
+      "patterns": [
+        "Are there any current promotions?",
+        "Do you have any discounts?",
+        "What are the latest deals?",
+        "Are there any special offers?"
+      ],
+      "responses": [
+        "You can view current promotions and discounts on our 'Promotions' page.",
+        "Check our 'Promotions' section for the latest deals and special offers."
+      ]
+    },
+    {
+      "tag": "student_support",
+      "patterns": [
+        "Is there any support for students?",
+        "What kind of student support is available?",
+        "How can students get help?",
+        "Are there resources for student support?"
+      ],
+      "responses": [
+        "We offer various support services for students. Visit the 'Student Support' section on our website for more information.",
+        "Students can find resources and assistance in the 'Student Support' area of our site."
+      ]
+    },
+    {
+      "tag": "seller_rating",
+      "patterns": [
+        "How do I rate a seller?",
+        "Can I leave a review for the seller?",
+        "How do I provide feedback on a seller?",
+        "I want to rate my seller"
+      ],
+      "responses": [
+        "To rate a seller, go to the completed order page and click 'Rate Seller'. You can leave a review and rating there.",
+        "You can provide feedback on a seller by visiting the order details page and selecting 'Rate Seller'."
+      ]
+    },
+    {
+      "tag": "buyer_rating",
+      "patterns": [
+        "How do I rate a buyer?",
+        "Can I leave a review for the buyer?",
+        "How do I provide feedback on a buyer?",
+        "I want to rate my buyer"
+      ],
+      "responses": [
+        "To rate a buyer, go to the completed order page and click 'Rate Buyer'. You can leave a review and rating there.",
+        "You can provide feedback on a buyer by visiting the order details page and selecting 'Rate Buyer'."
+      ]
+    },
+    {
+      "tag": "transaction_history",
+      "patterns": [
+        "How do I view my transaction history?",
+        "Can I see my past orders?",
+        "Where can I find my purchase history?",
+        "I want to check my transaction records"
+      ],
+      "responses": [
+        "You can view your transaction history by logging into your account and visiting the 'My Orders' section.",
+        "To see your past orders, go to 'My Orders' in your account dashboard."
+      ]
+    },
+    {
+      "tag": "password_reset",
+      "patterns": [
+        "How do I reset my password?",
+        "I forgot my password, what do I do?",
+        "Can I change my password?",
+        "I need to reset my password"
+      ],
+      "responses": [
+        "To reset your password, click 'Forgot Password' on the login page and follow the instructions.",
+        "You can change your password by selecting 'Forgot Password' on the login page and following the steps."
+      ]
+    },
+    {
+      "tag": "irrelevant_query",
+      "patterns": [
+        "Sorry, I didn't understand that.",
+        "That's not quite related to our topic.",
+        "I'm not sure how to respond to that.",
+        "Could you please ask a question related to our service?",
+        "Let's try focusing on our main topic."
+      ],
+      "responses": [
+        "It seems like that's not quite related to what we're discussing. Is there anything else I can assist you with?",
+        "I'm sorry, I'm having trouble understanding your question. Could you please ask something related to our services?",
+        "I'm not sure how to address that. Can you ask a question about our products or services?",
+        "I'm here to help with any questions related to our service. Could you please provide more context?"
+      ]
+      }
+
+  ]
+}
