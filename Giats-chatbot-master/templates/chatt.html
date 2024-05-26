@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Giats Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #chat-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+        #messages {
+            flex-grow: 1;
+            height: 300px;
+            overflow-y: scroll;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .message {
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            max-width: 80%;
+        }
+        .user-message {
+            background-color: #dcf8c6;
+            align-self: flex-end;
+        }
+        .bot-message {
+            background-color: #f1f0f0;
+            align-self: flex-start;
+        }
+        #input-container {
+            display: flex;
+        }
+        #user-input {
+            flex-grow: 1;
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        #send-btn {
+            padding: 10px 20px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="messages"></div>
+        <div id="input-container">
+            <input type="text" id="user-input" placeholder="Type a message..." />
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('send-btn').addEventListener('click', async () => {
+            const userInput = document.getElementById('user-input').value;
+            if (!userInput) return;
+
+            // Display user message
+            const userMessage = document.createElement('div');
+            userMessage.textContent = 'You: ' + userInput;
+            userMessage.className = 'message user-message';
+            document.getElementById('messages').appendChild(userMessage);
+
+            // Send message to the chatbot
+            const response = await fetch('/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: userInput })
+            });
+            const data = await response.json();
+
+            // Display bot response
+            const botMessage = document.createElement('div');
+            botMessage.textContent = 'Giats: ' + data.response;
+            botMessage.className = 'message bot-message';
+            document.getElementById('messages').appendChild(botMessage);
+
+            // Clear user input
+            document.getElementById('user-input').value = '';
+
+            // Scroll to the bottom of the messages
+            const messagesDiv = document.getElementById('messages');
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        });
+    </script>
+</body>
+</html>

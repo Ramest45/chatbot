@@ -1,8 +1,10 @@
 import random
 import json
 
+import random
+import json
 import torch
-
+from flask import Flask, request, jsonify, render_template
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
@@ -26,12 +28,19 @@ model.load_state_dict(model_state)
 model.eval()
 
 bot_name = "Giats"
-print("Let's chat! (type 'quit' to exit)")
-while True:
-    # sentence = "do you use credit cards?"
-    sentence = input("You: ")
-    if sentence == "quit":
-        break
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('chatt.html')
+
+@app.route('/chat', methods=['POST'])
+def chat():
+    data = request.json
+    sentence = data.get("message")
+    if not sentence:
+        return jsonify({"response": "I do not understand..."}), 400
 
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
@@ -48,6 +57,10 @@ while True:
     if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                print(f"{bot_name}: {random.choice(intent['responses'])}")
+                response = random.choice(intent['responses'])
+                return jsonify({"response": response})
     else:
-        print(f"{bot_name}: I do not understand...")
+        return jsonify({"response": "I do not understand..."}), 200
+
+if __name__ == '__main__':
+    app.run(debug=True)
